@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://d03d6ph4pyy5d"]
+
+[ext_resource type="PackedScene" uid="uid://b87aypnllvh8w" path="res://Characters/Player 1/player_1.tscn" id="1_n2yv1"]
+[ext_resource type="Texture2D" uid="uid://4nbxmru3amrt" path="res://Artwork/Characters/Player 2/p2_front.png" id="2_hbftj"]
+[ext_resource type="Script" path="res://Characters/Player 2/player_2.gd" id="2_xj0tw"]
+
+[node name="Player2" instance=ExtResource("1_n2yv1")]
+script = ExtResource("2_xj0tw")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_hbftj")
+
+[node name="CollisionShape2D" parent="." index="1"]
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
