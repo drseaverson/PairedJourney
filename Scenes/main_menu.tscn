@@ -1,26 +1,42 @@
-[gd_scene format=3 uid="uid://oclitpy60wt5"]
+[gd_scene load_steps=4 format=3 uid="uid://oclitpy60wt5"]
 
-[node name="Control" type="Control"]
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_2ie5a"]
+[ext_resource type="FontFile" uid="uid://ctosuwjk7xgc7" path="res://Resources/Fonts/Milky Coffee.otf" id="3_4apqc"]
+[ext_resource type="FontFile" uid="uid://bi4c2pobvqaxk" path="res://Resources/Fonts/Lemon Love.otf" id="5_kloo2"]
+
+[node name="Main Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2ie5a")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -282.0
-offset_right = 358.0
-grow_vertical = 0
+anchors_preset = -1
+anchor_top = 0.312
+anchor_bottom = 0.312
+offset_left = 54.0
+offset_top = -152.96
+offset_right = 412.0
+offset_bottom = 129.04
+grow_vertical = 2
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_hover_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_focus_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_disabled_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_4apqc")
+theme_override_font_sizes/font_size = 72
 text = "Start
 "
 flat = true
@@ -30,7 +46,16 @@ expand_icon = true
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_hover_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_focus_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_disabled_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_4apqc")
+theme_override_font_sizes/font_size = 72
 text = "Options"
 flat = true
 alignment = 0
@@ -38,7 +63,37 @@ alignment = 0
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_hover_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_focus_color = Color(0.47451, 0.643137, 0.956863, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.215686, 0.419608, 0.827451, 1)
+theme_override_colors/font_disabled_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_4apqc")
+theme_override_font_sizes/font_size = 72
 text = "Quit"
 flat = true
 alignment = 0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+offset_left = 45.0
+offset_top = 45.0
+offset_right = 921.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(0.913725, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.235294, 0.235294, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 15
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("5_kloo2")
+theme_override_font_sizes/font_size = 120
+text = "Paired*Journey"
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
