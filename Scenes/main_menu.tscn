@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://oclitpy60wt5"]
+[gd_scene load_steps=7 format=3 uid="uid://oclitpy60wt5"]
 
 [ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_2ie5a"]
 [ext_resource type="FontFile" uid="uid://ctosuwjk7xgc7" path="res://Resources/Fonts/Milky Coffee.otf" id="3_4apqc"]
 [ext_resource type="FontFile" uid="uid://bi4c2pobvqaxk" path="res://Resources/Fonts/Lemon Love.otf" id="5_kloo2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_04o07"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xf6fc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ktgrl"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -37,6 +43,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
+theme_override_styles/focus = SubResource("StyleBoxEmpty_04o07")
 text = "Start
 "
 flat = true
@@ -56,6 +63,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xf6fc")
 text = "Options"
 flat = true
 alignment = 0
@@ -73,6 +81,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ktgrl")
 text = "Quit"
 flat = true
 alignment = 0
