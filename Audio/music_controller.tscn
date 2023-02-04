@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtvhhpt7evb8x"]
+
+[ext_resource type="Script" path="res://Audio/music_controller.gd" id="1_rxvcb"]
+
+[node name="MusicController" type="Node"]
+script = ExtResource("1_rxvcb")
+
+[node name="MusicAudio" type="AudioStreamPlayer" parent="."]
+bus = &"Music"
+
+[node name="MasterAudio" type="AudioStreamPlayer" parent="."]

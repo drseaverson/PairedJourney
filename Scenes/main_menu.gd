@@ -2,6 +2,7 @@ extends Control
 
 
 func _ready():
+	print(get_tree().current_scene.name)
 	pass
 	#$VBoxContainer/StartButton.grab_focus()
 	#if MusicController.is_playing() == false:
