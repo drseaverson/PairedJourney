@@ -4,11 +4,11 @@
 [ext_resource type="FontFile" uid="uid://ctosuwjk7xgc7" path="res://Resources/Fonts/Milky Coffee.otf" id="3_4apqc"]
 [ext_resource type="FontFile" uid="uid://bi4c2pobvqaxk" path="res://Resources/Fonts/Lemon Love.otf" id="5_kloo2"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypvrc"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bnytb"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eq2ll"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_caym4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lkln4"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ivfgc"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -43,7 +43,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ypvrc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bnytb")
 text = "Start
 "
 flat = true
@@ -63,7 +63,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
-theme_override_styles/focus = SubResource("StyleBoxEmpty_eq2ll")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_caym4")
 text = "Options"
 flat = true
 alignment = 0
@@ -81,7 +81,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4apqc")
 theme_override_font_sizes/font_size = 72
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lkln4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ivfgc")
 text = "Quit"
 flat = true
 alignment = 0
